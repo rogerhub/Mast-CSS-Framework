@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mast Demo Page</title>
+<!--Include the stylesheet -->
+<link rel="stylesheet" type="text/css" href="mast/mast.css" />
+
+</head>
+<body>
+<div class="main" style="width:900px;"><!-- 900 pixels is not defined by the Mast framework. Feel free to redefine as you like. -->
+    <h1>Mast CSS Framework</h1><!-- Only the H1 and H2 headings have styles applied. -->
+    <p>Mast is a CSS framework designed to remove the mess of designing informative web pages. It is intended for experienced HTML writers as a foundation to write informative and simplistic web pages. The core idea behind Mast is focus on content, not design. After all, a good design is one you never notice.</p>
+    <p>The following line is not a simple <cite>HR</cite> horizontal rule element, but a styled DIV with the class name "hr". It is much easier to deal with than the usual horizontal rules.</p>
+    <div class="hr"></div><!-- Horizontal rule! -->
+    <p>This page demonstrates some of the uses of the MAST CSS system and its various styles. It shows a 900px wide main DIV that contains text and other elements such as <b>bold text</b>. The Mast CSS itself can be included with the following stylesheet statement:</p>
+    <code>&lt;link rel="stylesheet" type="text/css" href="mast/mast.css" /&gt;</code>
+    <p>Other common styles include the <ins>inserted text</ins>, <del>deleted text</del>, and <abbr title="Example of the &lt;abbr&gt; tag.">abbreviations</abbr>. Code snippets are wrapped by the HTML5 &lt;code&gt; tag. They are produced in monospace on a block element and have a special border that indicate that they are code.</p>
+    <code>
+    <pre>function dosomething(){
+    //Occasionally, wrapping code in a &lt;pre&gt; tag helps to improve its readability
+    return "&lt;code&gt;&lt;pre&gt;Hello world!&lt;/pre&gt;&lt;/code&gt;";
+}</pre>
+    </code>
+	<p>The buttons below aren't my creation. I stole some code from <a href="http://ubuwaits.github.com/css3-buttons/">here</a>.</p><!-- a pseudoclasses are defined for links -->
+    
+    <!-- Styles are defined for button.gray, button.green, button.blue, and button.red -->
+    <p><button class="green">Full speed ahead!</button> <button class="blue">Hold on!</button> <button class="red">Error!</button> <button class="gray">I'm boring</button></p>
+    <p><button class="gray big">A big button</button> <button class="blue big" onclick="javascript:alert('I love you!');">Do something &rsaquo;</button></p>
+    
+    <p><label for="text1">Label for</label><br /><input name="text1" type="text" class="text" value="test" /></p><!-- Special styles are defined for input.text -->
+    <p><label for="pass1">Password field</label><br /><input name="pass1" type="password" class="password" value="" /></p><!-- Exactly the same classes defined for input.password as input.text -->
+    <p><label for="text2">Massive texts</label><br /><textarea name="text2" rows="10" cols="50">These text boxes were inspired by Tumblr's core.</textarea></p><!-- Default height is fine, but you can override it with element styles. -->
+    <div class="hr"></div>
+    
+    <h2>This is a subheading</h2>
+    <p>Really, if you need more headings than the H1 and H2 that are defined, feel free to edit them in yourself. Isn't sharing code great? Take a peek inside this demo page <cite>(CTRL + U)</cite><!-- I ran out of tags to use, so CITE holds the font-family:monospace style --> to see all the different class definitions. You may use this framework however you like as long as it is not evil.</p>
+    <p>Seriously, <br />Roger Chen</p>
+</div>
+</body>
+</html>
